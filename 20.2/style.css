@@ -1,0 +1,238 @@
+/* stles all of the elements within the body, mostly used to make sure everything is properly sized and spaced */
+body,
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #16a085;
+  font-family: Raleway, sans-serif;
+  font-size: 11pt;
+  font-weight: 400;
+  color: #363636;
+}
+/* styles everything with the mentioned tags, used to dictate where and how it is displayed */
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+p,
+ul {
+  margin-top: 0;
+}
+p {
+  line-height: 190%;
+}
+a {
+  color: #171717;
+}
+.image {
+  display: inline-block;
+}
+/* mainly used to make the title completly upper case and change the color of the heading within the title */
+.title {
+  margin-bottom: 2em;
+  text-transform: uppercase;
+}
+.title h2 {
+  font-weight: 400;
+  font-size: 2em;
+  color: #16a085;
+}
+/* used to insure the image properly wraps around the elemnts on the webpage */
+#wrapper {
+  background: #fff url() repeat;
+}
+/* used to set the width of the container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* used to ensure the header properly wraps around the elements on the webpage */
+#header-wrapper {
+  overflow: hidden;
+  background: url(images/bg01.png) repeat;
+  background-size: 100%;
+  padding: 6em 0 2em 0;
+  background: #333;
+}
+#header {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+/* mostly used to change the color and size of the mentioned tags */
+#logo {
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 2em 0;
+  text-transform: uppercase;
+}
+#logo h1 {
+  letter-spacing: 0.1em;
+  font-size: 3em;
+}
+#logo p {
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+#logo a {
+  text-decoration: none;
+  color: #fff;
+}
+/* used to dictate what image is shown with the banner tag and also how it interacts woth other elements on the page */
+#banner {
+  overflow: hidden;
+  height: 500px;
+  background: url(images/Kitchen.jpg) no-repeat center;
+  background-size: cover;
+}
+/* all used to change the appearance of various elements of the header, including color and size */
+#menu-wrapper {
+  background: #16a085;
+}
+#menu {
+  overflow: hidden;
+  height: 100px;
+}
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: normal;
+  text-align: center;
+}
+#menu li {
+  display: inline-block;
+}
+#menu a {
+  display: block;
+  letter-spacing: 1px;
+  padding: 0 40px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  line-height: 100px;
+  border: none;
+  color: #fff;
+}
+#menu .current_page_item a,
+#menu a:hover {
+  text-decoration: none;
+}
+#menu .current_page_item a {
+  background: #1abc9c;
+}
+/* mostly used to dictate the position and behaviour of the mentioned tags in context to other elements on the page */
+#page {
+  position: relative;
+  overflow: hidden;
+  padding: 6em 0 5em 0;
+}
+#content {
+  float: left;
+  width: 790px;
+}
+/* like the previous CSS for the menu, just this time for the footer */
+#foot {
+  overflow: hidden;
+  padding: 5em 0;
+  text-align: center;
+}
+#foot p {
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.5);
+}
+#foot a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* used mostly for the location and size of the buttons used for the modals */
+.button {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 1.5em 3em 1.5em 3em;
+  background: #16a085;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #fff;
+}
+.button:before {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+}
+/* used to ensure the footer wraps properly with other elements on the page */
+#footer-wrapper {
+  overflow: hidden;
+  padding: 5em 0;
+  background: #1e1b1a;
+}
+/* used to dictate the size and position of the modal on your screen once opened */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* used mostly for the color and location of the button group, but also changes the mouse cursor when hovering over each button */
+.btn-group button {
+  background-color: #fff;
+  border: 1px solid #16a085;
+  color: #fff;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+}
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+/* used for how the content of each modal is displayed once opened */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+/* used for the color and size of the close button on the opened modal */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: 700;
+}
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
